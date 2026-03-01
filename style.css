@@ -1,20 +1,12 @@
-nav {
-  margin: 20px;
+body {
+  background-color: #FFF8F0;
+  font-family: 'Fredoka', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #222222;
 }
-
-nav a {
-  text-decoration: none;
-  background-color: hotpink;
-  color: white;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 20px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  background-color: yellow;
-  color: black;
-  transform: scale(1.1);
+h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
 }
