@@ -1,1 +1,20 @@
+nav {
+  margin: 20px;
+}
 
+nav a {
+  text-decoration: none;
+  background-color: hotpink;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: yellow;
+  color: black;
+  transform: scale(1.1);
+}
