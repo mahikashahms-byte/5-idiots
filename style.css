@@ -10,4 +10,33 @@ h1 {
   font-weight: 600;
   letter-spacing: 1px;
 }
+nav a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ff8bd1, #8ec5ff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(135deg, #ffd6f9, #c2f0ff, #fff4b8);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
