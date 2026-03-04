@@ -1,40 +1,51 @@
 /* =============================
-   BOLD COLORFUL BACKGROUND + BUTTONS
+   BOLD COLORFUL BACKGROUND + NAV
 ============================= */
 
-/* === Body / Page Background === */
+/* --- Page Background --- */
 body {
-    background-color: #FFFFFF;            /* Clean white so photos pop */
-    font-family: 'Poppins', Arial, sans-serif; /* Modern, bold font */
-    color: #333333;                       /* Dark text for readability */
+    background-color: #FFEE33;                 /* Bright yellow for chaotic energy */
+    font-family: 'Fredoka', Arial, sans-serif; /* Your current font */
+    color: #333333;                            /* Dark text for readability */
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* === Main Headings === */
-h1, h2, h3 {
-    color: #FF33AA;                       /* Bubblegum Pink headings */
-    margin-bottom: 20px;
+/* --- Page Heading --- */
+h1 {
+    color: #FF33AA; /* Bubblegum Pink heading */
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
-/* === Bold, Colorful Buttons === */
-.button {
-    background-color: #0055FF;           /* Cobalt Blue main button */
-    color: #FFFFFF;                       /* White text */
-    padding: 12px 25px;                   /* Size of button */
-    margin: 15px;                         /* Space around button */
-    border: none;                         /* No border */
-    border-radius: 10px;                  /* Rounded corners */
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: 700;                     /* Bold text */
-    font-size: 16px;                      /* Readable font size */
-    cursor: pointer;                      /* Pointer on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
 }
 
-/* === Hover Effect for Buttons === */
-.button:hover {
-    background-color: #FF6600;            /* Bright Orange on hover */
-    transform: scale(1.05);               /* Slight grow effect */
+/* --- Navigation / Buttons --- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    background-color: #0055FF;   /* Cobalt Blue button */
+    color: #FFFFFF;              /* White text */
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+}
+
+nav a:hover {
+    background-color: #FF6600;   /* Bright Orange on hover */
+    transform: scale(1.05);      /* Slight grow effect */
 }
