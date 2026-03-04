@@ -1,87 +1,40 @@
-/* === Import Google Font === */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* =============================
+   BOLD COLORFUL BACKGROUND + BUTTONS
+============================= */
 
-/* === Body / Page Setup === */
+/* === Body / Page Background === */
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* Modern & fun */
-    background-color: #FFFFFF; /* White background */
-    color: #333333; /* Charcoal text */
-    text-align: center;
+    background-color: #FFFFFF;            /* Clean white so photos pop */
+    font-family: 'Poppins', Arial, sans-serif; /* Modern, bold font */
+    color: #333333;                       /* Dark text for readability */
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-/* === Page Titles / Headings === */
+/* === Main Headings === */
 h1, h2, h3 {
-    color: #FF33AA; /* Bubblegum Pink headings */
+    color: #FF33AA;                       /* Bubblegum Pink headings */
     margin-bottom: 20px;
 }
 
-/* === Gallery Grid === */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 20px;
-}
-
-/* === Images === */
-.gallery img {
-    width: 100%;
-    border-radius: 10px;
-    border: 5px solid #0055FF; /* Cobalt Blue frame */
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-/* === Hover Effect on Images === */
-.gallery img:hover {
-    transform: scale(1.05);
-    border-color: #FF6600; /* Bright Orange on hover */
-}
-
-/* === Captions or Titles Under Images === */
-.gallery img + .caption {
-    font-weight: bold;
-    color: #FF33AA; /* Bubblegum Pink captions */
-    margin-top: 5px;
-}
-
-/* === Buttons / Clickable Elements === */
+/* === Bold, Colorful Buttons === */
 .button {
-    background-color: #0055FF; /* Cobalt Blue button */
-    color: #FFFFFF;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 700;
+    background-color: #0055FF;           /* Cobalt Blue main button */
+    color: #FFFFFF;                       /* White text */
+    padding: 12px 25px;                   /* Size of button */
+    margin: 15px;                         /* Space around button */
+    border: none;                         /* No border */
+    border-radius: 10px;                  /* Rounded corners */
     font-family: 'Poppins', Arial, sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 700;                     /* Bold text */
+    font-size: 16px;                      /* Readable font size */
+    cursor: pointer;                      /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
 }
 
+/* === Hover Effect for Buttons === */
 .button:hover {
-    background-color: #FF6600; /* Bright Orange hover */
-    transform: scale(1.05);
-}
-
-/* === Lightbox Zoom Effect === */
-.zoomed {
-    transform: scale(1.5);
-    z-index: 10;
-    transition: transform 0.3s;
-}
-
-/* === Optional: Page Sections / Decorative Shapes === */
-.section {
-    padding: 40px 20px;
-}
-
-.shape {
-    width: 50px;
-    height: 50px;
-    background-color: #FF33AA; /* Bubblegum Pink shapes */
-    border-radius: 10px;
-    display: inline-block;
-    margin: 5px;
+    background-color: #FF6600;            /* Bright Orange on hover */
+    transform: scale(1.05);               /* Slight grow effect */
 }
