@@ -1,42 +1,87 @@
+/* === Import Google Font === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* === Body / Page Setup === */
 body {
-  background-color: #FFF8F0;
-  font-family: 'Fredoka', sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #222222;
-}
-h1 {
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-nav a {
-  padding: 10px 20px;
-  border-radius: 20px;
-  background: linear-gradient(45deg, #ff8bd1, #8ec5ff);
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
+    font-family: 'Poppins', Arial, sans-serif; /* Modern & fun */
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Charcoal text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav a:hover {
-  transform: scale(1.1) rotate(-2deg);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-body {
-  font-family: 'Fredoka', sans-serif;
-  background: linear-gradient(135deg, #ffd6f9, #c2f0ff, #fff4b8);
-  background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
+/* === Page Titles / Headings === */
+h1, h2, h3 {
+    color: #FF33AA; /* Bubblegum Pink headings */
+    margin-bottom: 20px;
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* === Gallery Grid === */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
 }
 
+/* === Images === */
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #0055FF; /* Cobalt Blue frame */
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* === Hover Effect on Images === */
+.gallery img:hover {
+    transform: scale(1.05);
+    border-color: #FF6600; /* Bright Orange on hover */
+}
+
+/* === Captions or Titles Under Images === */
+.gallery img + .caption {
+    font-weight: bold;
+    color: #FF33AA; /* Bubblegum Pink captions */
+    margin-top: 5px;
+}
+
+/* === Buttons / Clickable Elements === */
+.button {
+    background-color: #0055FF; /* Cobalt Blue button */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-family: 'Poppins', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #FF6600; /* Bright Orange hover */
+    transform: scale(1.05);
+}
+
+/* === Lightbox Zoom Effect === */
+.zoomed {
+    transform: scale(1.5);
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+/* === Optional: Page Sections / Decorative Shapes === */
+.section {
+    padding: 40px 20px;
+}
+
+.shape {
+    width: 50px;
+    height: 50px;
+    background-color: #FF33AA; /* Bubblegum Pink shapes */
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+}
