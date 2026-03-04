@@ -1,1 +1,67 @@
+/* =============================
+   CHAOTIC PRETTY THEME
+   Pink background + Blue/Yellow nav buttons
+============================= */
 
+/* --- Page Background & Font --- */
+body {
+    background-color: #FFC0CB;               /* Soft pink background */
+    font-family: 'Fredoka', Arial, sans-serif;
+    color: #333333;                          /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- Headings --- */
+h1 {
+    color: #0055FF;                          /* Bold blue heading */
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    color: #FFD700;                          /* Yellow accent text */
+}
+
+/* --- Navigation / Buttons --- */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                          /* Wrap on small screens */
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    background-color: #0055FF;                /* Blue buttons */
+    color: #FFFFFF;                           /* White text */
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+nav a:hover {
+    background-color: #FFD700;                /* Yellow hover */
+    color: #333333;                           /* Dark text on yellow */
+    transform: scale(1.05);                   /* Slight pop effect */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* --- Optional: Paragraph Links --- */
+p a {
+    color: #0055FF;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #FFD700;
+}
